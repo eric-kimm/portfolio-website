@@ -1,0 +1,196 @@
+---
+import '../styles/globals.css';
+import Navbar from '../components/Navbar.astro';
+import MainHead from './MainHead.astro'
+import { Icon } from 'astro-icon/components'
+
+const {title, seoTitle, seoDesc} = Astro.props
+---
+
+<html>
+	<MainHead title={title} seoTitle={seoTitle} seoDesc={seoDesc} />
+	<body class="bg-slate-900 text-white">
+		<!-- <Navbar /> -->
+		<div class="absolute mt-50 pl-90">			
+			<h1 class="text-5xl font-bold tracking-tighter"> Eric Kim </h1>
+			<div class="flex items-center gap-5 mt-4">
+				<p class="text-white/50 text-sm"> 
+					San Jose, CA
+				</p>
+			</div>
+
+			<p class="mt-10 text-med">
+				Hi there! I'm a student at Santa Clara Univeristy studying computer science. <br>
+				My particular interests in software lie in backend and applied ML. <br>
+				In my spare time, I enjoy hiking, watching movies, and training jiu jitsu.
+			</p>
+
+			<div class="flex items-center gap-5 mt-15">
+				<a
+					href="https://github.com/eric-kimm"
+					class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition-all text-sm"
+				>
+					<Icon name="mdi:github" class="w-5 h-5" /> 
+					github
+				</a>
+
+				<a 
+					href="https://www.linkedin.com/in/kim-ericc/"
+					class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition-all text-sm"
+				>
+					<Icon name="mdi:linkedin" class="w-5 h-5" /> 
+					linkedin
+				</a>
+			</div>
+
+			<h2 class="mt-20 text-xl font-bold mb-4 flex items-center gap-2">
+				Education
+			</h2>
+			<div class="p-6 rounded-xl border border-white/10 bg-white/5 max-w-2xl">
+				<div class="space-y-4">
+					<div>
+						<div class="flex justify-between items-start">
+							<h3 class="font-semibold text-white">Santa Clara University</h3>
+							<span class="text-sm text-white/50 italic">2023 — 2027</span>
+						</div>
+						<p class="text-white/70">Bachelor of Science in Computer Science</p>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="mt-20 text-xl font-bold mb-4 flex items-center gap-2">
+				Experience
+			</h2>
+			<div class="p-6 rounded-xl border border-white/10 bg-white/5 max-w-2xl">
+				<div class="space-y-10">
+					<div>
+						<div class="flex justify-between items-start">
+							<h3 class="font-semibold text-white">Data Engineer Intern @ Scaled Entelechy</h3>
+							<span class="text-sm text-white/50 italic">Summer 2023</span>
+						</div>
+						<p class="text-white/70 mt-3">Data extraction pipelines in Python. </p>
+					</div> <div>
+						<div class="flex justify-between items-start">
+							<h3 class="font-semibold text-white">Software Developer @ FreshFrosh</h3>
+							<span class="text-sm text-white/50 italic">Spring 2025 - Summer 2025</span>
+						</div>
+						<p class="text-white/70 mt-3"> Full stack features for user communication with Node.js, Firebase, and React. </p>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="mt-20 text-xl font-bold mb-4 flex items-center gap-2">
+				Projects
+			</h2>
+			<div class="p-6 rounded-xl border border-white/10 bg-white/5 max-w-2xl mb-32">
+				<div class="space-y-10">
+					<div>
+						<div class="flex justify-between items-start">
+							<h3 class="font-semibold text-white">Stock Market Pipeline </h3>
+						</div>
+						<p class="text-white/70 mt-3"> 
+							Distributed systems pipeline on the cloud to alert and analyze stock market trends.
+						</p>
+						<ul class="mt-5 grid grid-cols-2 gap-x-8 gap-y-3">
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Java
+							</li>
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Spring Boot
+							</li>
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Docker
+							</li>
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Apache Kafka
+							</li>
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Postgresql
+							</li>
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								AWS
+							</li>
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Redis
+							</li>
+						</ul>
+
+						<div class="flex justify-between items-start mt-15">
+							<h3 class="font-semibold text-white">Cheater Beater</h3>
+						</div>
+						<p class="text-white/70 mt-3"> AI classroom monitoring tool with specialized object detection. </p>
+						<ul class="mt-5 grid grid-cols-2 gap-x-8 gap-y-3">
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Python
+							</li>
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								FastAPI
+							</li>
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								AWS
+							</li>
+						</ul>
+
+						<div class="flex justify-between items-start mt-15">
+							<h3 class="font-semibold text-white">UFC Fight Predictor</h3>
+						</div>
+						<p class="text-white/70 mt-3"> ETL pipeline to process UFC data and probabilistic ML model using Random Forest and XGBoost to predict UFC fights</p>
+						<ul class="mt-5 grid grid-cols-2 gap-x-8 gap-y-3">
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Python
+							</li>
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Scikit-learn
+							</li>
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Scrapy
+							</li>
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Postgresql
+							</li>
+						</ul>
+
+						<div class="flex justify-between items-start mt-15">
+							<h3 class="font-semibold text-white">Daily Wins</h3>
+						</div>
+						<p class="text-white/70 mt-3"> iOS mobile app to track daily habits and gamify productivity </p>
+						<ul class="mt-5 grid grid-cols-2 gap-x-8 gap-y-3">
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Swift
+							</li>
+							<li class="flex items-center gap-2 text-white/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Firebase
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<slot />
+		<style>
+			body {
+				font-family: "Roboto Mono", monospace;
+				font-optical-sizing: auto;
+				font-weight: 350;
+				font-style: normal;
+			}
+		</style>
+	</body>
+</html>
