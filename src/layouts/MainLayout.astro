@@ -19,11 +19,19 @@ const {title, seoTitle, seoDesc} = Astro.props
 				</p>
 			</div>
 
-			<p class="mt-10 text-med">
-				Hi there! I'm a student at Santa Clara Univeristy studying computer science. <br>
-				My particular interests in software lie in backend and applied ML. <br>
-				In my spare time, I enjoy hiking, watching movies, and training jiu jitsu.
-			</p>
+			<div class="flex items-center gap-20">
+				<p class="flex text-med">
+					Hi there! I'm a student at Santa Clara Univeristy studying <br>
+					computer science. My particular interests in software lie in <br>
+					backend and applied ML. In my spare time, I enjoy hiking, <br>
+					watching movies, and training jiu jitsu.
+				</p>
+
+				<img 
+					src="/portrait1.jpeg"
+					class="ml-auto w-64 h-64 rounded-full object-cover border-2 border-white/20 shadow-xl"
+				/>
+			</div>
 
 			<div class="flex items-center gap-5 mt-15">
 				<a
@@ -40,6 +48,13 @@ const {title, seoTitle, seoDesc} = Astro.props
 				>
 					<Icon name="mdi:linkedin" class="w-5 h-5" /> 
 					linkedin
+				</a>
+				<a 
+					href="mailto:erickim2208@gmail.com" 
+					class="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-lg hover:bg-white/20 transition-all text-sm"
+				>
+					<Icon name="mdi:email-outline" class="w-5 h-5" /> 
+					contact
 				</a>
 			</div>
 
@@ -87,6 +102,9 @@ const {title, seoTitle, seoDesc} = Astro.props
 					<div>
 						<div class="flex justify-between items-start">
 							<h3 class="font-semibold text-white">Stock Market Pipeline </h3>
+							<a href="https://github.com/eric-kimm/stock-market-pipeline" target="_blank" class="text-xs text-blue-400 hover:underline mt-1.5">
+								view source
+							</a>
 						</div>
 						<p class="text-white/70 mt-3"> 
 							Distributed systems pipeline on the cloud to alert and analyze stock market trends.
@@ -123,7 +141,10 @@ const {title, seoTitle, seoDesc} = Astro.props
 						</ul>
 
 						<div class="flex justify-between items-start mt-15">
-							<h3 class="font-semibold text-white">Cheater Beater</h3>
+							<h3 class="font-semibold text-white"> Cheater Beater </h3>
+							<a href="https://github.com/eric-kimm/CheatingAppBackend" target="_blank" class="text-xs text-blue-400 hover:underline mt-1.5">
+								view source
+							</a>
 						</div>
 						<p class="text-white/70 mt-3"> AI classroom monitoring tool with specialized object detection. </p>
 						<ul class="mt-5 grid grid-cols-2 gap-x-8 gap-y-3">
@@ -143,6 +164,9 @@ const {title, seoTitle, seoDesc} = Astro.props
 
 						<div class="flex justify-between items-start mt-15">
 							<h3 class="font-semibold text-white">UFC Fight Predictor</h3>
+							<a href="https://github.com/eric-kimm/UFC-Predictor" target="_blank" class="text-xs text-blue-400 hover:underline mt-1.5">
+								view source
+							</a>
 						</div>
 						<p class="text-white/70 mt-3"> ETL pipeline to process UFC data and probabilistic ML model using Random Forest and XGBoost to predict UFC fights</p>
 						<ul class="mt-5 grid grid-cols-2 gap-x-8 gap-y-3">
