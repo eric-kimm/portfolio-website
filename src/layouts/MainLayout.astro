@@ -130,12 +130,53 @@ const {title, seoTitle, seoDesc} = Astro.props
 			</h2>
 			<div class="mb-32 max-w-2xl rounded-2xl border border-black/20 bg-gradient-to-br from-white to-black/[0.02] p-5 shadow-sm sm:p-6">
 				<div class="space-y-5">
-					<div class="rounded-xl border border-black/15 bg-white/80 p-4 sm:p-5">
-						<div class="flex justify-between items-start gap-4">
+					<a
+						href="https://github.com/eric-kimm/ai-screen-reader"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="group block rounded-xl border border-black/15 bg-white/80 p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-black/40 hover:bg-white hover:shadow-xl focus:outline-none focus-visible:-translate-y-1 focus-visible:border-black focus-visible:ring-2 focus-visible:ring-black/20 sm:p-5"
+					>
+						<div class="flex items-start gap-4">
+							<h3 class="font-semibold text-black"> VoiceNav (AI Screen Reader) </h3>
+						</div>
+						<p class="text-black/70 mt-3">
+							Voice controlled Chrome extension to read and navigate web pages for visually impaired users.
+						</p>
+						<ul class="mt-5 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
+							<li class="flex items-center gap-2 text-black/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								Python
+							</li>
+							<li class="flex items-center gap-2 text-black/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								FastAPI
+							</li>
+							<li class="flex items-center gap-2 text-black/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								vLLM
+							</li>
+							<li class="flex items-center gap-2 text-black/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								ElevenLabs
+							</li>
+							<li class="flex items-center gap-2 text-black/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								AMD Dev Cloud
+							</li>
+							<li class="flex items-center gap-2 text-black/80">
+								<span class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span>
+								JavaScript
+							</li>
+						</ul>
+					</a>
+					<a
+						href="https://github.com/eric-kimm/stock-market-pipeline"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="group block rounded-xl border border-black/15 bg-white/80 p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-black/40 hover:bg-white hover:shadow-xl focus:outline-none focus-visible:-translate-y-1 focus-visible:border-black focus-visible:ring-2 focus-visible:ring-black/20 sm:p-5"
+					>
+						<div class="flex items-start gap-4">
 							<h3 class="font-semibold text-black">Stock Market Pipeline </h3>
-							<a href="https://github.com/eric-kimm/stock-market-pipeline" target="_blank" rel="noopener noreferrer" class="text-xs text-blue-600 hover:underline mt-1.5 whitespace-nowrap">
-								view source
-							</a>
 						</div>
 						<p class="text-black/70 mt-3">
 							Distributed systems pipeline on the cloud to alert and analyze stock market trends.
@@ -170,14 +211,16 @@ const {title, seoTitle, seoDesc} = Astro.props
 								Redis
 							</li>
 						</ul>
-					</div>
+					</a>
 
-					<div class="rounded-xl border border-black/15 bg-white/80 p-4 sm:p-5">
-						<div class="flex justify-between items-start gap-4">
+					<a
+						href="https://github.com/austinkimchi/CheaterBuster"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="group block rounded-xl border border-black/15 bg-white/80 p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-black/40 hover:bg-white hover:shadow-xl focus:outline-none focus-visible:-translate-y-1 focus-visible:border-black focus-visible:ring-2 focus-visible:ring-black/20 sm:p-5"
+					>
+						<div class="flex items-start gap-4">
 							<h3 class="font-semibold text-black"> AI Proctor </h3>
-							<a href="https://github.com/austinkimchi/CheaterBuster" target="_blank" rel="noopener noreferrer" class="text-xs text-blue-600 hover:underline mt-1.5 whitespace-nowrap">
-								view source
-							</a>
 						</div>
 						<p class="text-black/70 mt-3"> Classroom monitoring tool with specialized object detection. </p>
 						<ul class="mt-5 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
@@ -198,14 +241,16 @@ const {title, seoTitle, seoDesc} = Astro.props
 								OpenCV
 							</li>
 						</ul>
-					</div>
+					</a>
 
-					<div class="rounded-xl border border-black/15 bg-white/80 p-4 sm:p-5">
-						<div class="flex justify-between items-start gap-4">
+					<a
+						href="https://github.com/eric-kimm/UFC-Predictor"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="group block rounded-xl border border-black/15 bg-white/80 p-4 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-black/40 hover:bg-white hover:shadow-xl focus:outline-none focus-visible:-translate-y-1 focus-visible:border-black focus-visible:ring-2 focus-visible:ring-black/20 sm:p-5"
+					>
+						<div class="flex items-start gap-4">
 							<h3 class="font-semibold text-black">UFC Fight Predictor</h3>
-							<a href="https://github.com/eric-kimm/UFC-Predictor" target="_blank" rel="noopener noreferrer" class="text-xs text-blue-600 hover:underline mt-1.5 whitespace-nowrap">
-								view source
-							</a>
 						</div>
 						<p class="text-black/70 mt-3"> ETL pipeline to process UFC data and probabilistic ML model using Random Forest and XGBoost to predict UFC fights</p>
 						<ul class="mt-5 grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
@@ -226,7 +271,7 @@ const {title, seoTitle, seoDesc} = Astro.props
 								Postgresql
 							</li>
 						</ul>
-					</div>
+					</a>
 
 					<div class="rounded-xl border border-black/15 bg-white/80 p-4 sm:p-5">
 						<div class="flex justify-between items-start gap-4">
